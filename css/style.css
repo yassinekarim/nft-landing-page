@@ -10,8 +10,8 @@
   --font-code: 'Roboto', monospace;
   --bg-color: #00163f;
   --font-color: #ffffff;
-  --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
+  --btn-bg-color: #be7efe;
+  --accent-color: #ffffff;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -28,7 +28,21 @@ body {
   height: 100vh;
   color: var(--font-color);
   font-family: var(--font-primary);
+  background-image: url("../images/background/background_clear.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
+
+body > header {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-flow: column;
+  color: var(--font-color);
+  font-family: var(--font-primary);
+}
+
 
 .container {
   display: flex;
@@ -116,7 +130,7 @@ section {
 }
 .countdown .clock-item .count-number {
   background: var(--accent-color);
-  color: var(--font-color);
+  color: var(--btn-bg-color);
   font-size: 2rem;
   font-weight: 700;
   font-family: var(--font-secondary);
@@ -141,8 +155,9 @@ section {
 }
 
 .countdown h1 {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 3px 3px 0 var(--accent-color);
   font-style: italic;
+  color: var(--btn-bg-color);
   margin: 2rem 0;
   font-size: 3.5rem;
   text-align: center;
@@ -151,6 +166,7 @@ section {
 .countdown p {
   font-size: 1.1rem;
   font-family: var(--font-secondary);
+  color: var(--btn-bg-color);
   margin-bottom: 2rem;
   text-align: center;
 }
