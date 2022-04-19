@@ -43,6 +43,15 @@ body > header {
   font-family: var(--font-primary);
 }
 
+body > footer {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-flow: column;
+  color: var(--font-color);
+  font-family: var(--font-primary);
+
+}
+
 
 .container {
   display: flex;
@@ -62,6 +71,14 @@ header .container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+footer .container {
+  flex-direction: column;
+  justify-content:left;
+  align-content: left;
+  margin-left: 10px;
+  margin-right: auto;
 }
 
 .menu {
