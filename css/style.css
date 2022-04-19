@@ -25,7 +25,7 @@ body {
   background-color: var(--bg-color);
   display: flex;
   flex-flow: column;
-  height: 100vh;
+  height: 110vh;
   color: var(--font-color);
   font-family: var(--font-primary);
   background-image: url("../images/background/background_clear.png");
